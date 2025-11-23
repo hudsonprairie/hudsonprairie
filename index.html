@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HudsonPrairie Technologies LLC</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #050816;
+      color: #f5f5f5;
+    }
+    header {
+      padding: 24px 32px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(3, 7, 18, 0.9);
+      position: sticky;
+      top: 0;
+      backdrop-filter: blur(12px);
+    }
+    .logo {
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+    .logo span {
+      color: #eab308;
+    }
+    nav a {
+      margin-left: 20px;
+      text-decoration: none;
+      color: #e5e7eb;
+      font-size: 0.95rem;
+    }
+    nav a:hover {
+      color: #eab308;
+    }
+    .hero {
+      padding: 80px 16px 64px;
+      max-width: 960px;
+      margin: 0 auto;
+      text-align: left;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 999px;
+      border: 1px solid rgba(234, 179, 8, 0.4);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 12px;
+      color: #eab308;
+    }
+    h1 {
+      font-size: clamp(2.3rem, 4vw, 3rem);
+      margin: 8px 0 16px;
+    }
+    h1 span {
+      color: #eab308;
+    }
+    .hero p {
+      max-width: 600px;
+      color: #d1d5db;
+      line-height: 1.6;
+      font-size: 0.98rem;
+    }
+    .hero-actions {
+      margin-top: 24px;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .btn-primary,
+    .btn-outline {
+      padding: 10px 18px;
+      border-radius: 999px;
+      border: 1px solid #eab308;
+      font-size: 0.9rem;
+      cursor: pointer;
+      text-decoration: none;
+    }
+    .btn-primary {
+      background: #eab308;
+      color: #111827;
+    }
+    .btn-outline {
+      background: transparent;
+      color: #eab308;
+    }
+    section {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 32px 16px;
+    }
+    h2 {
+      font-size: 1.4rem;
+      margin-bottom: 8px;
+    }
+    .section-subtitle {
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.14em;
+      color: #9ca3af;
+      margin-bottom: 4px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 16px;
+      margin-top: 16px;
+    }
+    .card {
+      padding: 18px 16px;
+      border-radius: 18px;
+      background: radial-gradient(circle at top left, rgba(234, 179, 8, 0.12), rgba(15, 23, 42, 1));
+      border: 1px solid rgba(148, 163, 184, 0.3);
+      font-size: 0.92rem;
+    }
+    .card h3 {
+      margin: 0 0 6px;
+      font-size: 1.05rem;
+    }
+    .card p {
+      margin: 0;
+      color: #d1d5db;
+      line-height: 1.5;
+    }
+    .contact {
+      margin-top: 12px;
+      font-size: 0.95rem;
+    }
+    .contact a {
+      color: #eab308;
+      text-decoration: none;
+    }
+    footer {
+      padding: 24px 16px 32px;
+      text-align: center;
+      font-size: 0.8rem;
+      color: #9ca3af;
+    }
+    @media (max-width: 600px) {
+      header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">HUDSONPRAIRIE<span> TECH</span></div>
+    <nav>
+      <a href="#services">Services</a>
+      <a href="#staffing">Staffing</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="badge">IT Consulting • Cloud • Talent</div>
+      <h1>
+        Modern IT consulting & staffing for
+        <span>practical, real-world delivery.</span>
+      </h1>
+      <p>
+        HudsonPrairie Technologies LLC partners with clients to deliver
+        high-quality engineering talent and hands-on technology consulting.
+        From cloud & identity projects to full-stack development and data
+        initiatives, we focus on outcomes, not buzzwords.
+      </p>
+      <div class="hero-actions">
+        <a href="#contact" class="btn-primary">Schedule a conversation</a>
+        <a href="#services" class="btn-outline">View services</a>
+      </div>
+    </section>
+
+    <section id="services">
+      <div class="section-subtitle">What we do</div>
+      <h2>Technology consulting services</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>Cloud & Identity (Azure / Entra ID)</h3>
+          <p>
+            Advisory and implementation support for Azure AD / Entra ID, IAM,
+            Conditional Access, PIM, and hybrid identity. We help you design
+            secure and scalable access for your workforce.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Java & Full-Stack Engineering</h3>
+          <p>
+            Backend services with Java/Spring, REST APIs, microservices, and
+            modern frontend using React / Angular. Experience in banking,
+            healthcare, and enterprise platforms.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Data & Analytics Support</h3>
+          <p>
+            Practical dashboards and data flows using SQL, Power BI, and cloud
+            tools to give leaders clear visibility into operations and
+            performance.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="staffing">
+      <div class="section-subtitle">Staffing & talent</div>
+      <h2>Specialized IT & engineering talent</h2>
+      <div class="cards">
+        <div class="card">
+          <h3>W-2 consulting & contractors</h3>
+          <p>
+            We work with vendors and enterprise clients to provide W-2
+            contractors for long-term projects, focusing on skill fit,
+            communication, and delivery mindset.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Direct-hire & niche roles</h3>
+          <p>
+            Support for direct-hire roles in cloud, IAM, Java, data, and
+            frontend engineering. We understand both the technology and the
+            team dynamics.
+          </p>
+        </div>
+        <div class="card">
+          <h3>Simple, transparent engagement</h3>
+          <p>
+            Clear terms, consistent communication, and a single point of
+            contact. No noise, just practical staffing support for your
+            projects.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="section-subtitle">Contact</div>
+      <h2>Let’s talk about your next project or role</h2>
+      <p class="contact">
+        Email:
+        <a href="mailto:info@hudsonprairie.com">info@hudsonprairie.com</a><br />
+        (Update this to your real business email when ready.)
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    © <span id="year"></span> HudsonPrairie Technologies LLC. All rights reserved.
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

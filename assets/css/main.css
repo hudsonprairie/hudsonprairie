@@ -365,3 +365,63 @@ body {
   color: #6b7280;
   margin-top: 4px;
 }
+
+/* =========================
+   MOBILE / TABLET STYLES
+   ========================= */
+@media (max-width: 768px) {
+
+  /* Header stacks logo + menu vertically */
+  .site-header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 12px 16px;
+  }
+
+  .site-header .logo {
+    margin-bottom: 8px;
+  }
+
+  /* Nav items wrap instead of forcing horizontal scroll */
+  .main-nav ul {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .main-nav ul li a {
+    font-size: 14px;
+  }
+
+  /* Let dropdowns fill the width nicely on small screens */
+  .dropdown-menu {
+    position: static;        /* no absolute positioning */
+    min-width: 100%;
+    margin-top: 4px;
+    box-shadow: none;
+    border-radius: 4px;
+    background: #0a1a2f;
+    white-space: normal;     /* allow wrapping on mobile */
+  }
+
+  .dropdown-menu li {
+    padding: 4px 0;
+  }
+
+  .dropdown-menu li a {
+    display: block;
+    padding: 6px 4px 6px 0;
+    color: #ffffff !important;
+  }
+
+  /* Main content gets a bit more breathing room */
+  .home-main {
+    margin: 24px auto 40px;
+    padding: 0 12px;
+  }
+
+  /* Footer stacks columns on mobile */
+  .footer-columns {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

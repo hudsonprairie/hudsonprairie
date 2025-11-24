@@ -1,1 +1,61 @@
-<!-- Placeholder — content coming soon -->
+<main class="home-main">
+
+  <section class="section">
+    <h1>Submit a Hiring Requirement</h1>
+    <p class="section-intro">
+      Share a bit about the role you’re hiring for. We’ll review the details and follow up with next steps,
+      timelines and suitable profiles.
+    </p>
+  </section>
+
+  <section class="section">
+    <form class="contact-form" method="post">
+      <label>Full Name</label>
+      <input type="text" name="name" placeholder="Your name" required />
+
+      <label>Company</label>
+      <input type="text" name="company" placeholder="Your company name" required />
+
+      <label>Work Email</label>
+      <input type="email" name="email" placeholder="name@company.com" required />
+
+      <label>Role Title</label>
+      <input type="text" name="roleTitle" placeholder="Example: Senior Java Developer" required />
+
+      <label>Employment Type</label>
+      <select name="employmentType" required>
+        <option value="">Select an option</option>
+        <option>Contract / Temporary</option>
+        <option>Contract-to-Hire</option>
+        <option>Full-time / Permanent</option>
+        <option>Open to discuss</option>
+      </select>
+
+      <label>Location</label>
+      <input type="text" name="location" placeholder="City, State or Remote" />
+
+      <label>Key Skills / Tech Stack</label>
+      <textarea name="skills" rows="3" placeholder="Example: Java, Spring Boot, React, Azure..."></textarea>
+
+      <label>Timeline / Urgency</label>
+      <select name="timeline">
+        <option value="">Select an option</option>
+        <option>Immediate (0–2 weeks)</option>
+        <option>Near term (2–4 weeks)</option>
+        <option>Flexible / Open</option>
+      </select>
+
+      <label>Additional Details</label>
+      <textarea name="details" rows="4" placeholder="Anything else we should know about the team, budget or expectations."></textarea>
+
+      <p class="form-note">
+        This form is currently for information collection only. We’ll wire it to an automated backend later.
+      </p>
+
+      <button type="submit" class="btn-primary" disabled>
+        Submit Requirement (coming soon)
+      </button>
+    </form>
+  </section>
+
+</main>

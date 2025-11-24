@@ -1,1 +1,54 @@
-<!-- Placeholder — content coming soon -->
+<main class="home-main">
+
+  <section class="section">
+    <h1>Submit Your Resume</h1>
+    <p class="section-intro">
+      Share your details and resume link. We’ll review your profile and reach out when we see a strong match
+      with current or upcoming roles.
+    </p>
+  </section>
+
+  <section class="section">
+    <form class="contact-form" method="post">
+      <label>Full Name</label>
+      <input type="text" name="name" placeholder="Your name" required />
+
+      <label>Email</label>
+      <input type="email" name="email" placeholder="name@example.com" required />
+
+      <label>Phone (optional)</label>
+      <input type="text" name="phone" placeholder="+1 (555) 123-4567" />
+
+      <label>Current Location</label>
+      <input type="text" name="location" placeholder="City, State or Country" />
+
+      <label>Primary Role / Title</label>
+      <input type="text" name="role" placeholder="Example: Azure AD Engineer, Java Developer, Data Analyst..." />
+
+      <label>Years of Experience</label>
+      <input type="text" name="experience" placeholder="Example: 5 years" />
+
+      <label>Key Skills</label>
+      <textarea name="skills" rows="3" placeholder="Example: Azure AD, Entra ID, IAM, PowerShell, Okta..."></textarea>
+
+      <label>LinkedIn Profile (optional)</label>
+      <input type="url" name="linkedin" placeholder="https://www.linkedin.com/in/..." />
+
+      <label>Resume Link (Google Drive / OneDrive / etc.)</label>
+      <input type="url" name="resumeLink" placeholder="Share a viewable link to your resume" />
+
+      <label>Anything else we should know?</label>
+      <textarea name="notes" rows="3" placeholder="Preferred locations, visa status, notice period..."></textarea>
+
+      <p class="form-note">
+        For now, please use a shareable resume link (Google Drive, OneDrive, etc.). 
+        We’ll add direct file upload or a backend later.
+      </p>
+
+      <button type="submit" class="btn-primary" disabled>
+        Submit Resume (coming soon)
+      </button>
+    </form>
+  </section>
+
+</main>

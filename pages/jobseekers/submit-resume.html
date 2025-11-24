@@ -1,54 +1,176 @@
-<main class="home-main">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Submit Resume | HudsonPrairie Solutions</title>
+  <link rel="stylesheet" href="/assets/css/main.css" />
+</head>
+<body>
 
-  <section class="section">
-    <h1>Submit Your Resume</h1>
-    <p class="section-intro">
-      Share your details and resume link. We’ll review your profile and reach out when we see a strong match
-      with current or upcoming roles.
-    </p>
-  </section>
+  <!-- GLOBAL HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="/"><span>HUDSONPRAIRIE</span></a>
+    </div>
 
-  <section class="section">
-    <form class="contact-form" method="post">
-      <label>Full Name</label>
-      <input type="text" name="name" placeholder="Your name" required />
+    <nav class="main-nav">
+      <ul>
+        <li><a href="/">Home</a></li>
 
-      <label>Email</label>
-      <input type="email" name="email" placeholder="name@example.com" required />
+        <li class="dropdown">
+          <a href="/pages/services/index.html">Services ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/services/staffing.html">Staffing Solutions</a></li>
+            <li><a href="/pages/services/contract.html">Contract / Temporary</a></li>
+            <li><a href="/pages/services/cth.html">Contract-to-Hire</a></li>
+            <li><a href="/pages/services/permanent.html">Permanent Hiring</a></li>
+            <li><a href="/pages/services/consulting.html">Consulting</a></li>
+            <li><a href="/pages/services/workforce.html">Workforce Management</a></li>
+            <li><a href="/pages/services/technology.html">Technology Solutions</a></li>
+          </ul>
+        </li>
 
-      <label>Phone (optional)</label>
-      <input type="text" name="phone" placeholder="+1 (555) 123-4567" />
+        <li class="dropdown">
+          <a href="/pages/industries/index.html">Industries ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/industries/it.html">Information Technology</a></li>
+            <li><a href="/pages/industries/healthcare.html">Healthcare</a></li>
+            <li><a href="/pages/industries/finance.html">Finance & Accounting</a></li>
+            <li><a href="/pages/industries/engineering.html">Engineering & Manufacturing</a></li>
+            <li><a href="/pages/industries/logistics.html">Retail & Logistics</a></li>
+          </ul>
+        </li>
 
-      <label>Current Location</label>
-      <input type="text" name="location" placeholder="City, State or Country" />
+        <li class="dropdown">
+          <a href="/pages/jobseekers/index.html">Job Seekers ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/jobseekers/search-jobs.html">Search Jobs</a></li>
+            <li><a href="/pages/jobseekers/submit-resume.html">Submit Resume</a></li>
+            <li><a href="/pages/jobseekers/how-we-hire.html">How We Hire</a></li>
+            <li><a href="/pages/jobseekers/resources.html">Career Resources</a></li>
+            <li><a href="/pages/jobseekers/faq.html">FAQ</a></li>
+          </ul>
+        </li>
 
-      <label>Primary Role / Title</label>
-      <input type="text" name="role" placeholder="Example: Azure AD Engineer, Java Developer, Data Analyst..." />
+        <li class="dropdown">
+          <a href="/pages/employers/index.html">Employers ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/employers/submit-requirement.html">Submit Requirement</a></li>
+            <li><a href="/pages/employers/why-us.html">Why Work With Us</a></li>
+            <li><a href="/pages/employers/process.html">Staffing Process</a></li>
+            <li><a href="/pages/employers/case-studies.html">Case Studies</a></li>
+            <li><a href="/pages/employers/faq.html">Employer FAQ</a></li>
+          </ul>
+        </li>
 
-      <label>Years of Experience</label>
-      <input type="text" name="experience" placeholder="Example: 5 years" />
+        <li class="dropdown">
+          <a href="/pages/vendors/index.html">Vendors ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/vendors/partnership.html">Partner with Us</a></li>
+            <li><a href="/pages/vendors/submit-proposal.html">Submit Proposal</a></li>
+            <li><a href="/pages/vendors/rfp.html">RFP / RFQ Submission</a></li>
+            <li><a href="/pages/vendors/feedback.html">Vendor Feedback</a></li>
+          </ul>
+        </li>
 
-      <label>Key Skills</label>
-      <textarea name="skills" rows="3" placeholder="Example: Azure AD, Entra ID, IAM, PowerShell, Okta..."></textarea>
+        <li class="dropdown">
+          <a href="/pages/about/index.html">About ▾</a>
+          <ul class="dropdown-menu">
+            <li><a href="/pages/about/mission.html">Mission & Vision</a></li>
+            <li><a href="/pages/about/leadership.html">Leadership</a></li>
+            <li><a href="/pages/about/values.html">Core Values</a></li>
+            <li><a href="/pages/about/why-us.html">Why HudsonPrairie</a></li>
+          </ul>
+        </li>
 
-      <label>LinkedIn Profile (optional)</label>
-      <input type="url" name="linkedin" placeholder="https://www.linkedin.com/in/..." />
+        <li><a href="/pages/careers/index.html">Careers</a></li>
+        <li><a href="/pages/blog/index.html">Blog</a></li>
+        <li><a href="/pages/contact/index.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-      <label>Resume Link (Google Drive / OneDrive / etc.)</label>
-      <input type="url" name="resumeLink" placeholder="Share a viewable link to your resume" />
+  <!-- SUBMIT RESUME PAGE -->
+  <main class="home-main">
 
-      <label>Anything else we should know?</label>
-      <textarea name="notes" rows="3" placeholder="Preferred locations, visa status, notice period..."></textarea>
-
-      <p class="form-note">
-        For now, please use a shareable resume link (Google Drive, OneDrive, etc.). 
-        We’ll add direct file upload or a backend later.
+    <section class="section">
+      <h1>Submit Your Resume</h1>
+      <p class="section-intro">
+        Share your profile with HudsonPrairie and we’ll keep you in mind for roles that match your skills,
+        interests and location preferences.
       </p>
+    </section>
 
-      <button type="submit" class="btn-primary" disabled>
-        Submit Resume (coming soon)
-      </button>
-    </form>
-  </section>
+    <section class="section section-alt">
+      <h2>Tell Us About You</h2>
 
-</main>
+      <form class="contact-form">
+        <input type="text" placeholder="Full Name*" required />
+        <input type="email" placeholder="Email*" required />
+        <input type="text" placeholder="Phone (optional)" />
+        <input type="text" placeholder="Current Location (City, State)" />
+        <input type="text" placeholder="Primary Skills (e.g., Java, Azure, Power BI)" />
+        <input type="text" placeholder="Preferred Roles (e.g., Backend Developer, IAM Engineer, Data Analyst)" />
+        <input type="text" placeholder="Preferred Locations / Remote / Hybrid" />
+
+        <textarea rows="4" placeholder="Briefly describe your experience or what you’re looking for"></textarea>
+
+        <p class="form-note">
+          File upload and live form submission will be enabled in a later version.
+          For now, you can email your resume directly to
+          <a href="mailto:hello@hudsonprairie.com">hello@hudsonprairie.com</a>.
+        </p>
+
+        <button type="button" class="btn-primary">
+          Submit (Disabled for Now)
+        </button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- GLOBAL FOOTER -->
+  <footer class="site-footer">
+    <div class="footer-columns">
+      <div>
+        <h4>For Employers</h4>
+        <a href="/pages/employers/submit-requirement.html">Submit Requirement</a>
+        <a href="/pages/employers/why-us.html">Why Us</a>
+        <a href="/pages/employers/process.html">Staffing Process</a>
+        <a href="/pages/employers/case-studies.html">Case Studies</a>
+        <a href="/pages/employers/faq.html">Employer FAQ</a>
+      </div>
+
+      <div>
+        <h4>Job Seekers</h4>
+        <a href="/pages/jobseekers/search-jobs.html">Search Jobs</a>
+        <a href="/pages/jobseekers/submit-resume.html">Submit Resume</a>
+        <a href="/pages/jobseekers/how-we-hire.html">How We Hire</a>
+        <a href="/pages/jobseekers/resources.html">Career Resources</a>
+        <a href="/pages/jobseekers/faq.html">FAQ</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="/pages/about/index.html">About Us</a>
+        <a href="/pages/about/leadership.html">Leadership</a>
+        <a href="/pages/careers/index.html">Careers</a>
+        <a href="/pages/blog/index.html">Blog</a>
+        <a href="/pages/contact/index.html">Contact</a>
+      </div>
+
+      <div>
+        <h4>Contact</h4>
+        <p>Email: <a href="mailto:hello@hudsonprairie.com">hello@hudsonprairie.com</a></p>
+        <p>HudsonPrairie Solutions LLC</p>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 HudsonPrairie Solutions LLC. All rights reserved.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

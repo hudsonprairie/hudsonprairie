@@ -282,3 +282,22 @@ body {
   border: 1px solid #0a1a2f;
   color: #0a1a2f;
 }
+
+.highlight-box {
+  margin-top: 10px;
+  padding: 14px 16px;
+  border-radius: 10px;
+  background: #eef2ff;
+  border: 1px solid #c7d2fe;
+  font-size: 14px;
+  color: #374151;
+}
+
+.highlight-box ul {
+  margin-left: 18px;
+  margin-top: 6px;
+}
+
+.highlight-box li {
+  margin-bottom: 4px;
+}

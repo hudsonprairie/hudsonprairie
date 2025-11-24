@@ -248,3 +248,12 @@ body {
   color: #111827;
 }
 
+.steps-list {
+  margin-left: 20px;
+  font-size: 14px;
+  color: #4b5563;
+}
+
+.steps-list li {
+  margin-bottom: 6px;
+}

@@ -257,3 +257,28 @@ body {
 .steps-list li {
   margin-bottom: 6px;
 }
+
+.hero-actions {
+  margin-top: 18px;
+  display: flex;
+  gap: 12px;
+}
+
+.btn-primary,
+.btn-outline {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.btn-primary {
+  background: #0a1a2f;
+  color: white;
+}
+
+.btn-outline {
+  border: 1px solid #0a1a2f;
+  color: #0a1a2f;
+}

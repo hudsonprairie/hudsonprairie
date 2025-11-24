@@ -1,1 +1,111 @@
-/* main CSS coming soon */
+/* GLOBAL RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  background: #ffffff;
+  color: #222;
+}
+
+/* HEADER */
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 40px;
+  background: #0a1a2f;
+  color: white;
+}
+
+.site-header .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.main-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.main-nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 0;
+  font-size: 15px;
+}
+
+.main-nav ul li a:hover {
+  border-bottom: 2px solid #4aa3ff;
+}
+
+/* DROPDOWNS */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: white;
+  color: black;
+  top: 28px;
+  left: 0;
+  min-width: 180px;
+  padding: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.dropdown-menu li {
+  padding: 6px 16px;
+}
+
+.dropdown-menu li a {
+  color: #0a1a2f !important;
+  font-size: 14px;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* FOOTER */
+.site-footer {
+  background: #f2f4f7;
+  padding: 40px;
+  margin-top: 60px;
+}
+
+.footer-columns {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.site-footer a {
+  display: block;
+  color: #444;
+  margin-bottom: 6px;
+  text-decoration: none;
+}
+
+.site-footer h4 {
+  margin-bottom: 10px;
+  color: #0a1a2f;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #ccc;
+  font-size: 14px;
+}
